@@ -5,12 +5,12 @@ GitHub Pages is disabled. Do not re-enable it or restore the GitHub Pages CNAME.
 
 ## What is here
 
-Four hand-written pages, no build step: what is committed is what is served.
+Two hand-written pages, no build step: what is committed is what is served.
 
 | Path | What |
 | --- | --- |
 | `index.html` | home: the name, "Technology Solutions", Contact us |
-| `contact/`, `privacy/`, `tos/` | contact details and the two legal pages |
+| `contact/` | contact details: email and phone |
 | `css/style.css` | the whole design: dark only, Inter, dotted type on the tagline |
 | `js/fabric.js` | the hero animation: a drifting sheet of metallic tiles, plain WebGL, no libraries |
 | `fonts/` | Inter latin subsets (woff2) and their licence, `OFL.txt` |
