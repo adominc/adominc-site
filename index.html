@@ -3,47 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ADOM Inc. — AI Technology</title>
-  <meta name="description" content="ADOM Inc. builds intelligent systems that solve real problems.">
+  <title>ADOM Inc. — Technology Solutions</title>
+  <meta name="description" content="ADOM Inc. Technology Solutions.">
+  <meta name="theme-color" content="#070809">
+  <link rel="canonical" href="https://adominc.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ADOM Inc.">
+  <meta property="og:title" content="ADOM Inc. — Technology Solutions">
+  <meta property="og:description" content="ADOM Inc. Technology Solutions.">
+  <meta property="og:url" content="https://adominc.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/inter-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
     <div class="container">
-      <a href="/" class="logo">ADOM Inc.</a>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/contact">Contact</a>
-      </nav>
+      <a href="/" class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" aria-hidden="true"><rect width="26" height="26" rx="6" fill="#eef2f5"/><path d="M7.4 19.4 13 6.6l5.6 12.8M9.7 14.9h6.6" transform="scale(1)" fill="none" stroke="#0b1014" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>ADOM Inc.</a>
+      <a href="/contact/" class="nav-action">Contact us <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
     </div>
   </header>
 
-  <main>
-    <div class="container">
-      <div class="hero">
-        <h1>ADOM Inc.</h1>
-        <p class="tagline">AI Technology</p>
-        <p class="description">Access our flagship AI product: ARDE, an Agentic Research Development Environment at <a href="https://arde.ai">arde.ai</a>. A virtual computer with an autonomous research agent. Available for personal and enterprise use. <a href="/contact">Contact us</a> for sales.</p>
-        <p class="description">Access our high-performance live options-analytics terminal at <a href="https://convexvalue.com">ConvexValue.com</a>.</p>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-art-fallback"></div>
+        <canvas></canvas>
       </div>
-    </div>
+      <div class="hero-content container">
+        <h1 id="hero-title"><span>ADOM Inc.</span> <span class="dot-type">Technology Solutions</span></h1>
+        <div class="hero-actions">
+          <a href="/contact/" class="button button-primary">Contact us <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+          <a href="mailto:hello@adominc.com" class="button button-secondary">hello@adominc.com</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-info">
         <span>&copy; 2026 ADOM Inc.</span>
-        <address>
-          ADOM Inc., 38 E 21st St, New York, NY 10010<br>
-          <a href="tel:+16468752117">+1 646 875 2117</a>
-        </address>
+        <address>38 E 21st St, New York, NY 10010</address>
+        <a href="tel:+16468752117">+1 646 875 2117</a>
       </div>
-      <nav>
-        <a href="/tos">Terms</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/contact">Contact</a>
+      <nav aria-label="Footer">
+        <a href="/tos/">Terms</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/contact/">Contact</a>
       </nav>
     </div>
   </footer>
+  <script src="/js/fabric.js" defer></script>
 </body>
 </html>
