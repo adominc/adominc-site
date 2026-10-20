@@ -236,6 +236,8 @@ a {
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .dot-type {
     padding-right: 0.06em; /* keep the last letter's edge inside the clip box */
+    padding-bottom: 0.16em; /* let the background paint the g/y descenders */
+    margin-bottom: -0.16em; /* preserve the heading and action spacing */
     background-image: radial-gradient(circle, var(--accent) 1px, transparent 1.45px);
     background-size: 3px 3px;
     -webkit-background-clip: text;
@@ -291,6 +293,43 @@ a {
 }
 .hero-art[data-renderer='webgl'] .hero-art-fallback {
   opacity: 0;
+}
+
+/* ---------- products */
+.products {
+  flex: none;
+  padding-block: clamp(40px, 6vw, 72px);
+  border-top: 1px solid var(--line);
+}
+.products h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.product-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+.product-list h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.product-list a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 4px;
+}
+.product-list a:hover {
+  text-decoration-color: var(--accent);
+}
+.product-list p {
+  margin-top: 12px;
+  color: var(--muted);
 }
 
 /* ---------- inner pages */
@@ -403,6 +442,8 @@ a {
   /* 3px dots are too coarse for strokes this thin: solid tint instead. */
   .dot-type {
     padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
     background: none;
     -webkit-background-clip: border-box;
     background-clip: border-box;
@@ -423,6 +464,9 @@ a {
     inset: 6% 0;
   }
   .contact-list > div {
+    grid-template-columns: 1fr;
+  }
+  .product-list {
     grid-template-columns: 1fr;
   }
   .site-footer .container {
