@@ -9,7 +9,7 @@ Two hand-written pages, no build step: what is committed is what is served.
 
 | Path | What |
 | --- | --- |
-| `index.html` | home: the name, "Technology Solutions", Contact us |
+| `index.html` | home: the name, "Technology Solutions", Contact us, Our products |
 | `contact/` | contact details: email and phone |
 | `css/style.css` | the whole design: dark only, Inter, dotted type on the tagline |
 | `js/fabric.js` | the hero animation: a drifting sheet of metallic tiles, plain WebGL, no libraries |
@@ -20,6 +20,18 @@ The home page works without `fabric.js`: a CSS backdrop stays in place when Java
 WebGL is unavailable, and reduced-motion visitors get one still frame. To look at a change,
 serve this directory (`python3 -m http.server`) and open it; nothing is fetched from any
 other host.
+
+## Checks and product copy
+
+Run `make check` (Python 3 standard library only) to check the two pages, local
+assets and fragment destinations, and the approved product names, copy, and links.
+The gate performs no network requests. See [docs/products.md](docs/products.md)
+for the approved portfolio copy, [docs/product-definition.md](docs/product-definition.md)
+for the pinned product definition, and [docs/product-context.md](docs/product-context.md)
+for its source commit, revision, and update rules.
+For visual review, serve the repository locally and inspect the home and contact
+pages at desktop and mobile widths, including the dotted heading's g/y descenders,
+keyboard focus, and horizontal overflow.
 
 ## Hosting
 
